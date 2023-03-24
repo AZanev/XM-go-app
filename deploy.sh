@@ -10,4 +10,5 @@ minikube start
 
 helm install api helm/api-chart -n myns --create-namespace
 
+#we pause to see the output of previous commands
 pause
