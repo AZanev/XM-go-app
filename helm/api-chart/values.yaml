@@ -1,0 +1,16 @@
+replicaCount: 3
+deploymentName: api-deployment
+
+image:
+  repository: angelzanev/gotest
+  pullPolicy: IfNotPresent
+  tag: "v1.0"
+  containerPort: 8080
+  name: api
+  protocol: TCP
+
+service:
+  type: ClusterIP
+  name: api
+  port: 3000
+  targetPort: 8080
